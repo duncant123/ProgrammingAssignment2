@@ -28,6 +28,7 @@ cacheSolve <- function(x, ...) {
           return(m)
         }
         data <- x$get()
+        message("new matrix calculating inverse")
         m <- solve(data, ...)
         x$setsolve(m)
         m
